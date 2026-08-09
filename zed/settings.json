@@ -1,42 +1,116 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "cli_default_open_behavior": "existing_window",
-  "agent_buffer_font_size": 10.0,
-  "agent_ui_font_size": 11.0,
-  "buffer_font_weight": 300.0,
+  "format_on_save": "on",
+  "collaboration_panel": {
+    "dock": "left"
+  },
   "edit_predictions": {
-    "provider": "copilot"
+    "provider": "copilot",
+  },
+  "agent": {
+    "dock": "right",
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1",
+      "enable_thinking": false,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
   },
   "agent_servers": {
     "Kimi Code CLI": {
-         "default_config_options": {
-            "mode": "yolo"
-         },
-         "type": "custom",
-         "command": "kimi",
-         "args": ["acp"],
-         "env": {}
-       }
+             "default_config_options": {
+                "mode": "default"
+             },
+             "type": "custom",
+             "command": "kimi",
+             "args": ["acp"],
+             "env": {}
+           },
+    "github-copilot-cli": {
+      "type": "registry"
+    },
+    "github-copilot": {
+      "type": "registry",
+    },
   },
+  "git_panel": {
+    "tree_view": true,
+    "dock": "left",
+  },
+  "vim_mode": true,
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+  },
+  "chat_panel": {
+    "dock": "left",
+  },
+  "active_pane_modifiers": {
+    "inactive_opacity": 0.8,
+  },
+  "outline_panel": {
+    "dock": "right",
+  },
+  "title_bar": {
+    "show_branch_name": false,
+    "show_project_items": false,
+    "show_menus": false,
+    "show_onboarding_banner": false,
+    "show_sign_in": false,
+    "show_user_picture": false,
+  },
+  "disable_ai": false,
+  "project_panel": {
+    "dock": "right",
+  },
+  "ui_font_size": 17,
+  "buffer_font_size": 22.0,
+  "relative_line_numbers": "enabled",
+  "ui_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrains Mono",
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
-    "anthropic_retention": false
   },
-  "icon_theme": "Zed (Default)",
-  "ui_font_size": 11.0,
-  "buffer_font_size": 11.0,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Ayu Dark",
+  "theme": "Kanagawa Dragon",
+  "experimental.theme_overrides": {
+    "background.appearance": "transparent",
+    "background": "#00000099",
+    "panel.background": "#00000000",
+    "editor.background": "#00000000",
+    "tab_bar.background": "#00000000",
+    "terminal.background": "#00000000",
+    "toolbar.background": "#00000000",
+    "tab.inactive_background": "#00000000",
+    "tab.active_background": "#00000000",
+    "border": "#00000000",
+    "status_bar.background": "#00000099",
+    "title_bar.background": "#00000099",
+    "border.variant": "#00000000",
+    "scrollbar.track.background": "#52525b20",
+    "scrollbar.track.border": "#00000000",
+    "scrollbar.thumb.background": "#52525b30",
+    "scrollbar.thumb.border": "#00000000",
+    "elevated_surface.background": "#00000090",
+    "surface.background": "#00000090",
+    "editor.active_line_number": "#ffffffcc",
+    "editor.gutter.background": "#00000000",
+    "editor.indent_guide": "#ffffff30",
+    "editor.indent_guide_active": "#ffffff80",
+    "editor.line_number": "#ffffff80",
+    "editor.active_line.background": "#3f3f4640",
   },
-
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+      "max_severity": null,
+    },
+  },
+    "wakatime": {
+      "initialization_options": {
+        "api-key": "hehehehe, nah i am not showing this to you",
+      },
+    },
+  },
 }
